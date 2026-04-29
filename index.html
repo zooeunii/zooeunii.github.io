@@ -15,7 +15,6 @@
       max-width: 800px;
       margin: 80px auto;
       padding: 20px;
-      text-align: left;
     }
 
     .profile {
@@ -24,13 +23,15 @@
     }
 
     img {
-      width: 140px;
+      width: 100px; /* 👈 여기서 크기 조절 */
+      height: 100px;
       border-radius: 50%;
-      margin-bottom: 20px;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 40px;
       margin: 10px 0;
     }
 
@@ -66,7 +67,8 @@
   <div class="container">
 
     <div class="profile">
-      <img src="profile.jpg">
+      <!-- 👇 여기 중요 -->
+      <img src="./profile.jpg" alt="profile">
       <h1>Jueun Park</h1>
       <p>Computer Science Student</p>
     </div>
@@ -74,7 +76,7 @@
     <div class="section">
       <h2>About</h2>
       <p>
-        I am a computer science student currently building a strong foundation in system programming and big data processing.
+        I am a computer science student building a strong foundation in system programming and big data processing.
         I am continuously learning core concepts and preparing for future projects and practical experience.
       </p>
 
@@ -92,7 +94,8 @@
     <div class="section">
       <h2>Projects</h2>
       <p>
-        Personal and academic projects are currently being planned and will be updated soon.
+        - GitHub Pages Personal Website (this site)<br>
+        More projects will be added soon.
       </p>
     </div>
 
